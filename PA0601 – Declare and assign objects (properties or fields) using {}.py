@@ -8,19 +8,17 @@ course
 yearLevel
 '''
 
-class Student:
-   def __init__(self, name, studentNumber, course, yearLevel):
-       self.name = name
-       self.studentNumber = studentNumber
-       self.course = course
-       self.yearLevel = yearLevel
+student = {
+    "name": "Sihle Mkhwanazi",
+    "studentNumber": "214194027",
+    "course": "Data Science",
+    "yearLevel": 2,
+}
 
-studentInfo = Student("Sihle Mkhwanazi", "214194027", "Data Science", 2)
-
-print(studentInfo.name)  # Output: Sihle Mkhwanazi
-print(studentInfo.studentNumber)  # Output: 214194027
-print(studentInfo.course)  # Output: Data Science
-print(studentInfo.yearLevel)  # Output: 2
+print(student["name"])  # Output: Sihle Mkhwanazi
+print(student["studentNumber"])  # Output: 214194027
+print(student["course"])  # Output: Data Science
+print(student["yearLevel"])  # Output: 2
 
 '''
 Question 2
@@ -31,19 +29,16 @@ brand
 colour
 registrationNumber'''
 
-# 1. Define an empty class
-class Vehicle:
+# 1. Create an object of the class
+def Vehicle():
     pass
 
-# 2. Create an object of the class
-my_car = Vehicle()
+# 2. Assign values directly to the object
+Vehicle.brand = "Volkswagen"
+Vehicle.colour = "Red"
+Vehicle.registrationNumber = "XYZ789"
 
-# 3. Assign values directly to the object
-my_car.brand = "Volkswagen"
-my_car.colour = "Red"
-my_car.registrationNumber = "XYZ789"
-
-# 4. Access the values
-print(my_car.brand)  # Output: Volkswagen   
-print(my_car.colour)  # Output: Red
-print(my_car.registrationNumber)  # Output: XYZ789
+# 3. Access the values
+print(Vehicle.brand)  # Output: Volkswagen   
+print(Vehicle.colour)  # Output: Red
+print(Vehicle.registrationNumber)  # Output: XYZ789
