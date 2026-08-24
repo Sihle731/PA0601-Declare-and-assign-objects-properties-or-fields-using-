@@ -30,15 +30,14 @@ colour
 registrationNumber'''
 
 # 1. Create an object of the class
-def Vehicle():
-    pass
+Vehicle = {
 
 # 2. Assign values directly to the object
-Vehicle.brand = "Volkswagen"
-Vehicle.colour = "Red"
-Vehicle.registrationNumber = "XYZ789"
-
+"brand" :  "Volkswagen",
+"colour" : "Red",
+"registrationNumber" : "XYZ789"
+}
 # 3. Access the values
-print(Vehicle.brand)  # Output: Volkswagen   
-print(Vehicle.colour)  # Output: Red
-print(Vehicle.registrationNumber)  # Output: XYZ789
+print(Vehicle["brand"])  # Output: Volkswagen   
+print(Vehicle["colour"])  # Output: Red
+print(Vehicle["registrationNumber"])  # Output: XYZ789
