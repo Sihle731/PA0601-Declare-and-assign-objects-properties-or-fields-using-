@@ -32,9 +32,9 @@ registrationNumber'''
 # 1. Create an object of the class
 Vehicle = {
 # 2. Assign values directly to the object
-"brand" :  "Volkswagen",
-"colour" : "Red",
-"registrationNumber" : "XYZ789"
+    "brand" :  "Volkswagen",
+    "colour" : "Red",
+    "registrationNumber" : "XYZ789"
 }
 # 3. Access the values
 print(Vehicle["brand"])  # Output: Volkswagen   
